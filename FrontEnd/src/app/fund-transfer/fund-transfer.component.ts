@@ -8,6 +8,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class FundTransferComponent implements OnInit {
 
+  amount: number;
+  isChecked = false;
   constructor() { }
 
   ngOnInit() {

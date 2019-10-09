@@ -14,6 +14,11 @@ export class SidebarComponent {
       children: null
     },
     {
+      title: 'Login',
+      link: '/login',
+      children: null,
+    },
+    {
       title: 'Fund Transfer',
       link: '/fund-transfer',
       children: null

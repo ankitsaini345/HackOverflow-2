@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   NbInputModule, NbCardModule, NbButtonModule, NbIconModule,
   NbCheckboxModule, NbProgressBarModule
@@ -14,6 +15,8 @@ import {
     NbButtonModule,
     NbIconModule,
     NbCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule,
     NbProgressBarModule
   ],
   exports: [NbInputModule,

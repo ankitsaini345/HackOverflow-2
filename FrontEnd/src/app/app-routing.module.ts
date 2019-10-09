@@ -6,6 +6,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   { path: 'home', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginModule' },
+  // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   { path : 'fund-transfer', component : FundTransferComponent},
   { path : 'user-profile', component : UserProfileComponent},
   { path: 'Register', loadChildren: './register/register.module#RegisterModule' },
