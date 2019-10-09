@@ -12,12 +12,14 @@ import { HeaderComponent } from './layout/header.component';
 import { SidebarComponent } from './layout/sidebar.component';
 import { SharedModule } from './shared/shared.module';
 import { DARK_THEME } from './theme';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { DARK_THEME } from './theme';
     SharedModule,
     BkLayoutModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

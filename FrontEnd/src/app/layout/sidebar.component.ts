@@ -12,6 +12,11 @@ export class SidebarComponent {
       title: 'Dashboard',
       link: '/home',
       children: null
+    },
+    {
+      title: 'Login',
+      link: '/login',
+      children: null
     }
   ];
 
