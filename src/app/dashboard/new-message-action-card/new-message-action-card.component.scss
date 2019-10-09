@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  width: calc(100% - 8px);
+  margin: 0 8px 24px 0;
+}
+
+.image {
+  width: 45px;
+  border-radius: 0;
+  object-fit: fill;
+}
+
+.space-component {
+  height: auto;
+  min-height: 3rem;
+  overflow: visible;
+}
+
+.space-component1 {
+  height: auto;
+  min-height: 3rem;
+  padding: 0 0 0 16px;
+  overflow: visible;
+}
+
+.card {
+  width: 100%;
+}
