@@ -23,6 +23,11 @@ export class SidebarComponent {
       children: null
     },
     {
+      title: 'Open Initiatives',
+      link: '/open-initiatives',
+      children: null
+    },
+    {
       title: 'Registration',
       link: '/Registration',
       children: null
