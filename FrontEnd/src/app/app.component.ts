@@ -11,7 +11,7 @@ export class AppComponent {
   defaultLayout: BkLayout = {
     header: true,
     headerFixed: false,
-    sidebar: false,
+    sidebar: true,
     sidebarFixed: false
   };
 
