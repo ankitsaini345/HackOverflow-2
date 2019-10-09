@@ -14,6 +14,16 @@ export class SidebarComponent {
       children: null
     },
     {
+      title: 'Fund Transfer',
+      link: '/fund-transfer',
+      children: null
+    },
+    {
+      title: 'User Profile',
+      link: '/user-profile',
+      children: null,
+    },
+    {
       title: 'Register',
       link: '/Register',
       children: null
@@ -32,6 +42,7 @@ export class SidebarComponent {
       link: '/idea-submission',
       children: null
     }
+
   ];
 
 }
