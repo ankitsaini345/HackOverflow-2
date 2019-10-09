@@ -22,6 +22,11 @@ export class SidebarComponent {
       title: 'User Profile',
       link: '/user-profile',
       children: null,
+    },
+    {
+      title: 'Register',
+      link: '/Register',
+      children: null
     }, {
       title: 'Login',
       link: '/login',
@@ -30,11 +35,6 @@ export class SidebarComponent {
     {
       title: 'Open Initiatives',
       link: '/open-initiatives',
-      children: null
-    },
-    {
-      title: 'Registration',
-      link: '/Registration',
       children: null
     },
     {
