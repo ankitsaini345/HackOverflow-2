@@ -13,7 +13,11 @@ import { TasksComponent } from './tasks/tasks.component';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [DashboardComponent, NewMessageActionCardComponent, NewTasksActionCardComponent, MessageActionCardComponent, SystemActionCardComponent, UsersTableComponent, MessageListComponent, TasksComponent],
+  declarations: [DashboardComponent, NewMessageActionCardComponent,
+    NewTasksActionCardComponent, MessageActionCardComponent,
+    SystemActionCardComponent,
+    UsersTableComponent,
+    MessageListComponent, TasksComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

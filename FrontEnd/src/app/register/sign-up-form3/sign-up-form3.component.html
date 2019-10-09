@@ -1,0 +1,41 @@
+<!-- <div class="space space-component vtop hleft">
+  <label class="text text-basic label">Full name</label>
+  <input nbInput class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
+  <label class="text text-basic label">Email</label>
+  <input nbInput class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
+  <label class="text text-basic label">Password</label>
+  <input nbInput class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+  <a href="" target="_blank"  class="text-primary">Already have an account? Sign in</a>
+</div> -->
+
+<div class="space space-component vtop hleft">
+  <label for="fullname" class="text text-basic label">Full name</label>
+  <input nbInput id="fullname" class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
+
+  <label for="email" class="text text-basic label">Email</label>
+  <input nbInput id="email" class="input" placeholder="" fieldSize="medium" type="email" shape="rectangle" fullWidth>
+
+  <label for="password" class="text text-basic label">Password</label>
+  <input nbInput id="password" class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+
+  <label for="addr" class="text text-basic label">Address</label>
+  <input nbInput id="addr" class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
+  
+  <label for="contact" class="text text-basic label">Contact</label>
+  <input nbInput id="contact" class="input" placeholder="" fieldSize="medium" type="number" shape="rectangle" fullWidth>
+
+  <label for="gender" class="text text-basic label">Gender</label>
+  <nb-radio-group id="gender" class="input" name="15706127810560.7813845403955813">    
+      <nb-radio value="Male">Male</nb-radio>    
+      <nb-radio value="Female">Female</nb-radio>
+  </nb-radio-group>
+  <br>
+  
+  <label for="type" class="text text-basic label">User type</label>
+  <nb-select id="type" class="input" placeholder="select" status="primary" size="medium" fullwidth>    
+      <nb-option value="User">User</nb-option>    
+      <nb-option value="Investor">Investor</nb-option>
+  </nb-select>
+
+  <a routerLink="/login" class="text-primary" fullwidth>Already have an account? Sign in</a>
+</div>

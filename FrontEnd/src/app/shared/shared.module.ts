@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbInputModule, NbCardModule, NbButtonModule, NbIconModule, NbCheckboxModule } from '@nebular/theme';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  NbInputModule, NbCardModule, NbButtonModule, NbIconModule,
+  NbCheckboxModule, NbProgressBarModule
+} from '@nebular/theme';
 
 @NgModule({
   declarations: [],
@@ -13,9 +16,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NbIconModule,
     NbCheckboxModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NbProgressBarModule
   ],
-  exports: [NbInputModule, NbCardModule, NbButtonModule, NbIconModule, NbCheckboxModule, FormsModule,
-    ReactiveFormsModule]
+  exports: [NbInputModule,
+    NbCardModule, NbButtonModule, NbIconModule,
+    NbCheckboxModule,
+    NbProgressBarModule]
 })
 export class SharedModule { }

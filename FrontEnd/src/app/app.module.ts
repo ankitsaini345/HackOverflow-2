@@ -14,12 +14,18 @@ import { SharedModule } from './shared/shared.module';
 import { DARK_THEME } from './theme';
 import { FormsModule } from '@angular/forms';
 
+import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ProfileContainer11Component } from './user-profile/profile-container11/profile-container11.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    FundTransferComponent,
+    UserProfileComponent,
+    ProfileContainer11Component
   ],
   imports: [
     BrowserModule,
