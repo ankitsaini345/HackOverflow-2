@@ -10,21 +10,20 @@
       <div class="space space-component2 vtop hleft col-md-6 space-container">
         <div class="space space-component vtop hleft col-md-12">
           <label class="text text-basic label">From Account</label>
-          <input nbInput class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+          <input nbInput class="input" placeholder="" fieldSize="medium" type="number" shape="rectangle" fullWidth value="5514624465461">
         </div>
         <div class="space space-component vtop hleft col-md-12">
             <label class="text text-basic label">To Account</label>
-            <input nbInput class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+            <input nbInput class="input" placeholder="" fieldSize="medium" type="number" shape="rectangle" fullWidth>
           </div>
           <div class="space space-component vtop hleft col-md-12">
               <label class="text text-basic label">Amount </label>
-              <input nbInput class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+              <input nbInput [(ngModel)]="amount" class="input" placeholder="0.0" fieldSize="medium" type="number" shape="rectangle" fullWidth>
             </div>
           <div class="space space-component vtop hleft col-md-12">
-              <nb-checkbox class="" status="success">Do you Want to transfer </nb-checkbox>
-
+              <nb-checkbox [(ngModel)]="isChecked" (change)="isChecked ? false : true" status="success">Do you Want to transfer 1% towards Go Green Initiative</nb-checkbox>
             </div>
-            <label>Rs .. will be transferred into....</label>
+            <label *ngIf="isChecked">Rs {{amount * 0.01}} will be transferred towards Green Initiative</label>
       </div>
       <div class="space space-component3 vtop hleft col-md-6">
 
@@ -37,7 +36,7 @@
   <nb-card-footer  class="example-items-rows">
      <div class="space space-component vcenter hcenter col-md-12">
       <a nbButton href="" target="_blank"  class="button-link" size="medium" status="success" appearance="filled">
-          Pay (Amount)
+          Pay ₹ {{isChecked ? amount + amount * 0.01 : amount}}
       </a>
       <a nbButton href="" target="_blank"  class="button-link" size="medium" status="info" appearance="filled">
           Cancel
