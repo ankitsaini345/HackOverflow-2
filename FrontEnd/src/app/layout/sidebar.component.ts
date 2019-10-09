@@ -17,6 +17,20 @@ export class SidebarComponent {
       title: 'Register',
       link: '/Register',
       children: null
+    }, {
+      title: 'Login',
+      link: '/login',
+      children: null
+    },
+    {
+      title: 'Registration',
+      link: '/Registration',
+      children: null
+    },
+    {
+      title: 'Idea Submission',
+      link: '/idea-submission',
+      children: null
     }
   ];
 
