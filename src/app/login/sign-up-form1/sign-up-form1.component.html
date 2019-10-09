@@ -1,7 +1,11 @@
 <div class="space space-component vtop hleft">
   <label class="text text-basic label">Email</label>
-  <input nbInput class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
+  <input nbInput  [(ngModel)]="user.email" class="input" placeholder="" fieldSize="medium" type="text" shape="rectangle" fullWidth>
   <label class="text text-basic label">Password</label>
-  <input nbInput class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
-  <a href="" target="_blank"  class="text-primary">Don't have an account? Sign up</a>
+  <input nbInput [(ngModel)]="user.password" class="input" placeholder="" fieldSize="medium" type="password" shape="rectangle" fullWidth>
+  <div class="space space-component vcenter hleft col-md-12">
+    <button nbButton (click)="login()" class="" size="medium" status="success" appearance="filled" fullWidth>
+        Login
+    </button>
+  </div>
 </div>

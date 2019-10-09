@@ -9,13 +9,15 @@ import { SharedModule } from '../shared/shared.module';
 import { InvestorPageComponent } from './investor-page/investor-page.component';
 import { LoginContainer2Component } from './investor-page/login-container2/login-container2.component';
 import { SignUpForm2Component } from './investor-page/sign-up-form2/sign-up-form2.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent, LoginContainer1Component, SignUpForm1Component, InvestorPageComponent, LoginContainer2Component, SignUpForm2Component],
   imports: [
     CommonModule,
     LoginRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class LoginModule { }

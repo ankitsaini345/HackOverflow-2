@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Output, EventEmitter } from '@angular/core';
+import { ILogin } from './login';
 
 @Component({
   selector: 'app-sign-up-form1',
@@ -8,9 +9,19 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class SignUpForm1Component implements OnInit {
 
+  user: ILogin = {
+    email: '',
+    password: ''
+  };
+
+  @Output() userLogin = new EventEmitter<ILogin>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  login() {
+    this.userLogin.emit(this.user);
   }
 
 }

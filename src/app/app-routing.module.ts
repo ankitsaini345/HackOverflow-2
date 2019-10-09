@@ -8,13 +8,13 @@ import { InitiativesComponent } from './initiatives/initiatives.component';
 const routes: Routes = [
   { path: 'home', loadChildren: './dashboard/dashboard.module#DashboardModule' },
   { path: 'login', loadChildren: './login/login.module#LoginModule' },
-  // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   { path : 'fund-transfer', component : FundTransferComponent},
   { path : 'initiatives', component : InitiativesComponent},
   { path : 'user-profile', component : UserProfileComponent},
   { path: 'Register', loadChildren: './register/register.module#RegisterModule' },
   { path: 'open-initiatives', loadChildren: './open-initiatives/open-initiatives.module#OpenInitiativesModule' },
   { path: 'idea-submission', loadChildren: './idea-submission/idea-submission.module#IdeaSubmissionModule' },
+  { path: 'initiative', component: InitiativesComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 

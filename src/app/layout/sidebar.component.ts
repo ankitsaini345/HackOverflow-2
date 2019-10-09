@@ -32,10 +32,6 @@ export class SidebarComponent {
       title: 'Register',
       link: '/Register',
       children: null
-    }, {
-      title: 'Login',
-      link: '/login',
-      children: null
     },
     {
       title: 'Open Initiatives',
@@ -48,8 +44,8 @@ export class SidebarComponent {
       children: null
     },
     {
-      title: 'Initiaves',
-      link: '/initiatives',
+      title: 'Initiative',
+      link: '/initiative',
       children: null
     }
 
