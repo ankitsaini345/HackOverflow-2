@@ -1,6 +1,6 @@
 <nb-layout>
     <nb-layout-column *ngFor="let item of data | async" class="colored-column-info">
-        <nb-card size="tiny">
+        <nb-card status="success" size="tiny">
             <nb-card-header>{{item.id}} {{item.intiativeName}}</nb-card-header>
             <nb-card-body>{{item.initiativeDate}}</nb-card-body>
           </nb-card>
