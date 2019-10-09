@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ProfileContainer11Component } from './user-profile/profile-container11/profile-container11.component';
+import { InitiativesComponent } from './initiatives/initiatives.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProfileContainer11Component } from './user-profile/profile-container11/
     SidebarComponent,
     FundTransferComponent,
     UserProfileComponent,
-    ProfileContainer11Component
+    ProfileContainer11Component,
+    InitiativesComponent
   ],
   imports: [
     BrowserModule,
