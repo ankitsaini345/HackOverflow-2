@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: 'home', loadChildren: './dashboard/dashboard.module#DashboardModule' },
   { path: 'open-initiatives', loadChildren: './open-initiatives/open-initiatives.module#OpenInitiativesModule' },
+  { path: 'idea-submission', loadChildren: './idea-submission/idea-submission.module#IdeaSubmissionModule' },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 

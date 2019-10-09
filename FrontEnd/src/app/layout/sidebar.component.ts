@@ -22,6 +22,16 @@ export class SidebarComponent {
       title: 'Open Initiatives',
       link: '/open-initiatives',
       children: null
+    },
+    {
+      title: 'Registration',
+      link: '/Registration',
+      children: null
+    },
+    {
+      title: 'Idea Submission',
+      link: '/idea-submission',
+      children: null
     }
   ];
 
