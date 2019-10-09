@@ -46,6 +46,11 @@ export class SidebarComponent {
       title: 'Idea Submission',
       link: '/idea-submission',
       children: null
+    },
+    {
+      title: 'Initiaves',
+      link: '/initiatives',
+      children: null
     }
 
   ];
