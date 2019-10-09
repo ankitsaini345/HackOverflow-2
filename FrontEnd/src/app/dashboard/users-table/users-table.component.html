@@ -1,97 +1,39 @@
-<nb-card class="card" >
+<nb-card class="card">
   <nb-card-header class="slot">
     <div class="space space-component vcenter hleft col-md-7">
-      <h6 class="heading text-basic">Data Overview</h6>
+      <h6 class="heading text-basic">New Initiatives</h6>
     </div>
     <div class="space space-component vcenter hright col-md-5">
       <p class="text-primary paragraph">Add new Data list</p>
       <button nbButton class="button" size="medium" status="primary" appearance="filled">
-          <nb-icon icon="plus-outline"></nb-icon>
-          Add New User
+        <nb-icon icon="plus-outline"></nb-icon>
+        Add New User
       </button>
     </div>
   </nb-card-header>
 
   <nb-card-body class="slot">
-    <div class="space space-component vcenter hleft col-md-2">
-      <nb-checkbox class="" status="success">Facebook</nb-checkbox>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">29 Mar 2019</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Jast Emmitt</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-3">
-      <p class="text-basic paragraph">clifton@twitter.com</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Iceland</p>
-    </div>
-    <div class="space space-component vcenter hright col-md-1">
-      <button nbButton class="" size="tiny" status="success" appearance="filled">
+    <ng-container *ngFor="let item of data">
+      <div class="space space-component vcenter hleft col-md-2">
+        <nb-checkbox class="" status="success">{{item.intiativeName}}</nb-checkbox>
+      </div>
+      <div class="space space-component vcenter hleft col-md-2">
+        <p class="text-basic paragraph">{{item.initiativeDate | date}}</p>
+      </div>
+      <div class="space space-component vcenter hleft col-md-2">
+        <p class="text-basic paragraph">{{item.name}}</p>
+      </div>
+      <div class="space space-component vcenter hleft col-md-3">
+        <p class="text-basic paragraph">{{item.email}}</p>
+      </div>
+      <div class="space space-component vcenter hleft col-md-2">
+        <p class="text-basic paragraph">{{item.country}}</p>
+      </div>
+      <div class="space space-component vcenter hright col-md-1">
+        <button nbButton class="" size="tiny" status="success" appearance="filled">
           <nb-icon icon="chevron-right"></nb-icon>
-      </button>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <nb-checkbox class="" status="success">Twitter</nb-checkbox>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">30 Mar 2019</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Clifton Ortiz</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-3">
-      <p class="text-basic paragraph">clifton@twitter.com</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Sweden</p>
-    </div>
-    <div class="space space-component vcenter hright col-md-1">
-      <button nbButton class="" size="tiny" status="success" appearance="filled">
-          <nb-icon icon="chevron-right"></nb-icon>
-      </button>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <nb-checkbox class="" status="success">Yahoo</nb-checkbox>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">26 Apr 2019</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Mono Muller</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-3">
-      <p class="text-basic paragraph">fmona_muller@yahoo.com</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Estonia</p>
-    </div>
-    <div class="space space-component vcenter hright col-md-1">
-      <button nbButton class="" size="tiny" status="success" appearance="filled">
-          <nb-icon icon="chevron-right"></nb-icon>
-      </button>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <nb-checkbox class="" status="success">Yahoo</nb-checkbox>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">26 Apr 2019</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Frieda Mosciski</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-3">
-      <p class="text-basic paragraph">frieda_mosciski@yahoo.com</p>
-    </div>
-    <div class="space space-component vcenter hleft col-md-2">
-      <p class="text-basic paragraph">Lithuania</p>
-    </div>
-    <div class="space space-component vcenter hright col-md-1">
-      <button nbButton class="" size="tiny" status="success" appearance="filled">
-          <nb-icon icon="chevron-right"></nb-icon>
-      </button>
-    </div>
+        </button>
+      </div>
+    </ng-container>
   </nb-card-body>
 </nb-card>
