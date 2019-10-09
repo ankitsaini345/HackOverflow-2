@@ -1,4 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IDashboard } from './Idashboard';
+import { DashboardService } from './dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,9 +11,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  initiativeData$: Observable<IDashboard[]>;
+  constructor(private dashboardService: DashboardService) { }
 
   ngOnInit() {
+    this.initiativeData$ =  this.dashboardService.getInitivateData();
   }
 
 }

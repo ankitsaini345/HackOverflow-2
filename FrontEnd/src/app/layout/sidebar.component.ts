@@ -21,6 +21,25 @@ export class SidebarComponent {
     {
       title: 'User Profile',
       link: '/user-profile',
+      children: null,
+    }, {
+      title: 'Login',
+      link: '/login',
+      children: null
+    },
+    {
+      title: 'Open Initiatives',
+      link: '/open-initiatives',
+      children: null
+    },
+    {
+      title: 'Registration',
+      link: '/Registration',
+      children: null
+    },
+    {
+      title: 'Idea Submission',
+      link: '/idea-submission',
       children: null
     }
 
