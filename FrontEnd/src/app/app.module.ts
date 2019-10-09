@@ -12,12 +12,18 @@ import { HeaderComponent } from './layout/header.component';
 import { SidebarComponent } from './layout/sidebar.component';
 import { SharedModule } from './shared/shared.module';
 import { DARK_THEME } from './theme';
+import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ProfileContainer11Component } from './user-profile/profile-container11/profile-container11.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
+    FundTransferComponent,
+    UserProfileComponent,
+    ProfileContainer11Component
   ],
   imports: [
     BrowserModule,
